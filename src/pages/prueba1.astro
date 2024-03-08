@@ -1,0 +1,210 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Sección de encabezado -->
+      <h1 id="header-h1">Hola programador desde header</h1>
+    </div>
+
+    <div class="sidebar">
+      <!-- Barra lateral -->
+      <h2 class="sidebar-title">Hola programador desde sidebar</h2>
+      <h2 class="sidebar-title">Hola programador Termina sidebar</h2>
+    </div>
+
+    <!-- Contenido central -->
+    <div class="content">
+      <h2 class="content-title">
+        Empieza content contenido inicio,empieza content
+      </h2>
+      <div class="box">
+        <!-- Primer div en el contenido -->
+        <h2 class="content-box">
+          Hola programador desde content primer div clase box,termina content
+        </h2>
+      </div>
+
+      <div class="box">
+        <!-- Segundo div en el contenido -->
+        <h2 class="content-box">
+          Hola programador desde dentro content segundo div clase content-box
+        </h2>
+      </div>
+      <h2 class="content-title">Termina content contenido final content</h2>
+    </div>
+
+    <div class="footer">
+      <!-- Pie de página -->
+      <h2 class="footer">Hola programador desde footer</h2>
+    </div>
+  </body>
+</html>
+
+<style>
+  /* Regla de estilo para la sección de encabezado */
+  .header {
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    max-width: 100%;
+    /* Limita el ancho máximo al ancho del navegador */
+    margin: 0 auto;
+    /* Centra el elemento horizontalmente */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 150px;
+    /* Establece la altura en 150px */
+  }
+
+  /* Reglas de estilo para el elemento con ID "header-h1" */
+  #header-h1 {
+    color: black;
+    /* Cambia el color del texto a negro */
+    font-size: 24px;
+    /* Tamaño de fuente */
+    word-wrap: break-word;
+    /* Permite el ajuste de palabras al ancho del contenedor */
+    background-color: #f0f0f0;
+    /* Color de fondo gris claro */
+    margin-top: 10px;
+    /* Espacio superior de 10px */
+    margin-bottom: 10px;
+    /* Espacio inferior de 10px */
+    padding: 10px;
+    /* Espacio de relleno de 10px alrededor del texto */
+    border: 1px solid #ccc;
+    /* Borde de 1px sólido de color gris claro */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 150px;
+    /* Establece la altura en 150px */
+  }
+
+  /* Regla de estilo para todos los textos dentro de .header */
+  .header h1 {
+    background-color: #f0f0f0;
+    /* Color de fondo gris claro */
+    margin-top: 10px;
+    /* Espacio superior de 10px */
+    margin-bottom: 10px;
+    /* Espacio inferior de 10px */
+    padding: 10px;
+    /* Espacio de relleno de 10px alrededor del texto */
+    border: 1px solid #ccc;
+    /* Borde de 1px sólido de color gris claro */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 150px;
+    /* Establece la altura en 150px */
+  }
+
+  /* Regla de estilo para todos los textos dentro de .sidebar */
+  .sidebar h2 {
+    background-color: #f0f0f0;
+    /* Color de fondo gris claro */
+    margin-top: 10px;
+    /* Espacio superior de 10px */
+    margin-bottom: 10px;
+    /* Espacio inferior de 10px */
+    padding: 10px;
+    /* Espacio de relleno de 10px alrededor del texto */
+    border: 1px solid #ccc;
+    /* Borde de 1px sólido de color gris claro */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 150px;
+    /* Establece la altura en 150px */
+  }
+
+  /* Reglas de estilo para elementos con clase "content-box" dentro de la clase "content" */
+  .content .content-box {
+    background-color: #f0f0f0;
+    /* Color de fondo gris claro */
+    margin-top: 10px;
+    /* Espacio superior de 10px */
+    margin-bottom: 10px;
+    /* Espacio inferior de 10px */
+    padding: 10px;
+    /* Espacio de relleno de 10px alrededor del texto */
+    border: 1px solid #ccc;
+    /* Borde de 1px sólido de color gris claro */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 150px;
+    /* Establece la altura en 150px */
+  }
+
+  /* Reglas de estilo para el primer h2 en la sección de contenido central */
+  .content-title {
+    font-size: 24px;
+    /* Tamaño de fuente de 24px */
+    color: #333;
+    /* Cambia el color del texto a gris oscuro */
+    margin-top: 20px;
+    /* Espacio superior de 20px */
+    margin-bottom: 10px;
+    /* Espacio inferior de 10px */
+    background-color: #f0f0f0;
+    /* Color de fondo gris claro */
+    padding: 10px;
+    /* Espacio de relleno de 10px alrededor del texto */
+    border: 1px solid #ccc;
+    /* Borde de 1px sólido de color gris claro */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 150px;
+    /* Establece la altura en 150px */
+    /* poner en negrita texto */
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  /* Reglas de estilo para el segundo h2 en la sección de contenido central */
+  .content-box {
+    font-style: italic;
+    /* Cambia el estilo de fuente a cursiva */
+    color: #555;
+    /* Cambia el color del texto a gris medio */
+    margin-top: 10px;
+    /* Espacio superior de 10px */
+    margin-bottom: 20px;
+    /* Espacio inferior de 20px */
+    background-color: #f0f0f0;
+    /* Color de fondo gris claro */
+    padding: 10px;
+    /* Espacio de relleno de 10px alrededor del texto */
+    border: 1px solid #ccc;
+    /* Borde de 1px sólido de color gris claro */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 150px;
+    /* Establece la altura en 150px */
+  }
+
+  /* Reglas de estilo para elementos con clase "footer" */
+  .footer {
+    text-align: center;
+    /* Centra el texto en el elemento */
+    background-color: #333;
+    /* Cambia el color de fondo a gris oscuro */
+    color: white;
+    /* Cambia el color del texto a blanco */
+    padding: 5px;
+    /* Espacio de relleno de 5px alrededor del texto */
+    border-top: 1px solid #555;
+    /* Borde superior de 1px sólido de color gris medio */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 150px;
+    /* Establece la altura en 150px */
+  }
+</style>

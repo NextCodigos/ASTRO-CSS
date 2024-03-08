@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEX</title>
+    <style>
+        /* Contenedor y Elementos Flex */
+        .contenedor {
+            display: flex;
+        }
+
+        .elemento {
+            width: 25%;
+            background-color: aqua;
+        }
+
+        /* Dirección y Envoltura */
+        .contenedor-row-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .contenedor-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contenedor-column-reverse {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .contenedor-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contenedor-wrap-reverse {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        .contenedor-row-reverse-wrap-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+
+        .contenedor-row-reverse-wrap-reverse-flow {
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        /* Alineación y Justificación */
+        .contenedor-justify-start {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .contenedor-justify-end {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .contenedor-justify-center {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contenedor-justify-space-between {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .contenedor-justify-space-around {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        /* Alineación de Elementos */
+        .contenedor-align-stretch {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+
+        .contenedor-align-start {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+        }
+
+        .contenedor-align-end {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+        }
+
+        .contenedor-align-center {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        .contenedor-align-baseline {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: baseline;
+        }
+
+        /* Alineación de Filas */
+        .contenedor-content-stretch {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: stretch;
+        }
+
+        .contenedor-content-start {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+        }
+
+        .contenedor-content-end {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-end;
+        }
+
+        .contenedor-content-center {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+        }
+
+        .contenedor-content-space-between {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+        }
+
+        .contenedor-content-space-around {
+            height: 240px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+        }
+
+        /* Propiedades Interesantes de Flexbox - Order */
+        .contenedor-order {
+            display: flex;
+        }
+
+        .elemento-even {
+            order: 1;
+        }
+
+        /* Propiedades Interesantes de Flexbox - Flex */
+        .contenedor-flex {
+            display: flex;
+        }
+
+        .elemento-flex {
+            flex: 1 1 0;
+        }
+
+        .elemento-flex-grow {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+        <div class="elemento">7</div>
+    </div>
+
+    <!-- ... (otros contenedores y elementos) -->
+
+    <div class="contenedor-order">
+        <div class="elemento-even">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento-even">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento-even">5</div>
+        <div class="elemento">6</div>
+        <div class="elemento-even">7</div>
+    </div>
+
+    <div class="contenedor-flex">
+        <div class="elemento-flex">1</div>
+        <div class="elemento-flex">2</div>
+        <div class="elemento-flex">3</div>
+        <div class="elemento-flex elemento-flex-grow">4</div>
+        <div class="elemento-flex">5</div>
+        <div class="elemento-flex">6</div>
+        <div class="elemento-flex">7</div>
+    </div>
+
+</body>
+
+</html>

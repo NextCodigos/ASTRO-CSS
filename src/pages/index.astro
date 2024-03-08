@@ -1,0 +1,366 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASTRO EJEMPLOS FLEX</title>
+  </head>
+  <body>
+    <h1>Astro</h1>
+    <div class="contenedor">
+      <div class="elemento">1</div>
+      <div class="elemento">2</div>
+      <div class="elemento">3</div>
+      <div class="elemento">4</div>
+      <div class="elemento">5</div>
+      <div class="elemento">6</div>
+      <div class="elemento">7</div>
+    </div>
+  </body>
+</html>
+
+    <style>
+/* EJEMPLO 1: */
+/* .contenedor {
+    display: flex;
+}
+
+.elemento {
+    width: 5%;
+    background-color: aqua;
+} */
+
+/* flex-direction: */
+/* flex-direction:row; -> Los elementos se visualizan de izquierda a derecha (valor por defecto, similar al ejemplo 1) */
+/* flex-direction:row-reverse; -> Los elementos se visualizan de derecha a izquierda. */
+/* flex-direction:column; -> Los elementos se visualizan de arriba hacia abajo. */
+/* flex-direction:column-reverse; -> Los elementos se visualizan de abajo hacia arriba. */
+
+/* CSS EJEMPLO 2: */
+/* .contenedor {*/
+/*    display: flex;*/
+/*    flex-direction: row-reverse;*/
+/*} */
+
+/* CSS EJEMPLO 3: */
+/* .contenedor {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*} */
+
+/* CSS EJEMPLO 4: */
+ /* .contenedor {
+    display: flex;
+    flex-direction: column-reverse;
+}  */
+
+/* flex-wrap: */
+/* flex-wrap:nowrap; -> Los elementos se muestran en línea, en una sola fila, y su tamaño se ajusta al contenedor siempre y cuando la suma de todos ellos sea mayor o igual que el 100% de la anchura del contenedor. */
+/* flex-wrap:wrap; -> Los elementos se muestran en línea, pero si su anchura supera la del contenedor, se distribuyen en varias filas. */
+/* flex-wrap:wrap-reverse; -> Los elementos se muestran en línea, pero si su anchura supera la del contenedor, se distribuyen en varias filas, y además lo hacen en orden inverso al de maquetación. */
+
+/* CSS EJEMPLO 5: */
+/* .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* CSS EJEMPLO 6: */
+/* .contenedor {
+    display: flex;
+    flex-wrap: wrap-reverse;
+} */
+
+/* CSS EJEMPLO 7: */
+/* .contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+} */
+
+/* flex-flow: */
+/* CSS EJEMPLO 8: */
+/* .contenedor {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+} */
+
+/* justify-content: */
+/* CSS EJEMPLO 9: */ 
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* CSS EJEMPLO 10: */
+/* .contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+} */
+
+/* CSS EJEMPLO 11: */
+/* .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.elemento {
+    width: 21%;
+} */
+
+/* CSS EJEMPLO 12: */
+/* .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.elemento {
+    width: 21%;
+} */
+
+/* CSS EJEMPLO 13: */
+/* .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.elemento {
+    width: 21%;
+} */
+
+/* align-items | align-self | align-content: */
+/* CSS EJEMPLO 14: */
+/* .contenedor {
+    height: 240px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.elemento {
+    width: 21%;
+} */
+/* – align-items:flex-start; -> Alinea en vertical los elementos desde el inicio de la dirección del eje transversal de su contenedor (al igual que ocurría en horizontal). También afecta el valor de “flex-direction” al sentido de la alineación vertical. */
+
+/* CSS EJEMPLO 15: */
+
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-items:flex-start;
+}
+.elemento{
+width:21%;
+} */
+
+/* – align-items:flex-end; -> Alinea en vertical los elementos desde el final de la dirección del eje transversal de su contenedor (al igual que ocurría en horizontal). */
+
+/* CSS EJEMPLO 16: */
+
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-items:flex-end;
+}
+.elemento{
+width:21%;
+} */
+
+/* – align-items:center; -> Alinea al centro vertical los elementos a lo largo del eje transversal de su contenedor. */
+
+
+/* CSS EJEMPLO 17: */
+
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-items:center;
+}
+.elemento{
+width:21%;
+} */
+
+/* – align-items:baseline; -> Alinea en vertical las “líneas base” de los elementos a lo largo del eje transversal de su contenedor. Para poder comprender este ejemplo, vamos a añadir algunos estilos diferentes a los elementos: */
+
+/* CSS EJEMPLO 18: */
+
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-items:baseline;
+}
+.elemento{
+width:21%;
+line-height:2rem;
+}
+.elemento:first-child{
+line-height:4rem;
+}
+.elemento:nth-child(3){
+font-size:1rem;
+line-height:1.2rem;
+}
+.elemento:nth-child(6){
+font-size:3rem;
+line-height:5rem;
+}
+.elemento:last-child{
+line-height:3rem;
+} */
+
+/* Como podemos observar, lo que se alinea en vertical es la línea base del contenido de cada elemento, en este caso, la línea base de cada número, aunque entre ellos tengan alturas de línea o tamaños diferentes. */
+
+/* Pasamos a ver la descripción para los valores de la propiedad “align-content”: */
+/* – align-content:stretch; -> Valor por defecto. La altura de las filas se ajustan al tamaño del contenedor, dividiendo el espacio sobrante entre todas las líneas por igual. */
+
+/* CSS EJEMPLO 19: */
+
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-content:stretch;
+}
+.elemento{
+width:21%;
+} */
+
+/* – align-content:flex-start; -> Alinea en vertical las filas desde el inicio de la dirección del eje transversal de su contenedor. */
+
+/* CSS EJEMPLO 20: */
+
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-content:flex-start;
+}
+.elemento{
+width:21%;
+} */
+
+/* – align-content:flex-end; -> Alinea en vertical las filas desde el final de la dirección del eje transversal de su contenedor. */
+
+
+/* CSS EJEMPLO 21: */
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-content:flex-end;
+}
+.elemento{
+width:21%;
+} */
+
+/* – align-content:center; -> Alinea al centro vertical las filas a lo largo del eje transversal de su contenedor. */
+
+/* CSS EJEMPLO 22: */
+
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-content:center;
+}
+.elemento{
+width:21%; */
+/*}*/
+
+/* – align-content:space-between; -> Alinea las filas justificándolas a lo largo del eje transversal de su contenedor. Similar a un texto justificado en vertical. Las filas superior e inferior se pegan a sus extremos y el resto se distribuyen a lo largo del eje transversal dejando el mismo espacio entre ellas. */
+
+/* CSS EJEMPLO 23: */
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-content:space-between;
+}
+.elemento{
+width:21%;
+} */
+
+/* – align-content:space-around; -> Alinea las líneas distribuyendo sus centros de forma vertical a lo largo del eje transversal de su contenedor, dejando el mismo espacio vertical de separación en la parte superior, inferior y entre ellos. */
+
+/* CSS EJEMPLO 24: */
+
+/* .contenedor{
+height:240px;
+display:flex;
+flex-flow:row wrap;
+align-content:space-around;
+}
+.elemento{
+width:21%;
+} */
+
+/* Las propiedades más curiosas e interesantes de Flexbox.
+Hasta ahora hemos visto propiedades que influyen en la dirección, alineación y tamaño de elementos y filas (y aunque no hemos entrado en detalle, columnas) de un contenedor Flexbox. Pero a continuación vamos a ver propiedades impresionantes, ya que con ellas podemos modificar elementos de forma independiente aumentando las posibilidades de presentación de webs e interfaces.
+
+ 
+
+order:
+Entre estas propiedades se encuentra “order“, y es que como hemos podido comprobar con Flexbox no nos importa el orden de maquetación de nuestros elementos, y podemos alterar ese orden con tan sólo una instrucción. Que levante la mano quien no hubiera pagado por tener esta propiedad y olvidarse de wrap/unwrap de jquery 😉
+
+– order: -> Posiciona un elemento en el orden asignado por el número entero especificado en la propiedad, teniendo en cuenta el valor asignado al resto de elementos, cuyo valor por defecto es 0 (cero). Esto significa que, a no ser que se especifique un orden a todos los elementos, cualquier número aplicado a un solo elemento lo llevará a la última posición. Esto es debido a que por defecto todos tienen “cero”, por lo que si asignamos por ejemplo “order:3” a cualquier elemento, éste se colocará al final del listado. Más que un orden, podríamos llamarlo un “valor de posición de ordenación”. El siguiente ejemplo puede servirnos para comprender mejor esta propiedad: */
+
+
+/* CSS EJEMPLO 25: */
+/* .contenedor{
+display:flex;
+}
+.elemento:nth-child(even){
+order:1;
+} */
+
+/* Con este ejemplo podemos entender mejor el funcionamiento de esta propiedad, y es que estamos asignando el orden/posición “1” a todos los elementos pares, que se sitúan tras los elementos impares, que tendrían por defecto el valor “0”.
+
+ 
+
+flex:
+A continuación veremos la propiedad “flex” que se aplica a los elementos del contenedor y que a su vez se estructura de tres propiedades diferentes y que se pueden presentar por separado, “flex- grow”, “flex-shrink” y “flex-basis”, y se define de la siguiente forma:
+
+– flex: none | <flex-grow> <flex-shrink> <flex-basis>
+Vamos a ver las propiedades por separado:
+
+– flex-grow:<número>; -> Determina el factor de incremento de tamaño de uno o varios elementos en relación al resto teniendo en cuenta el espacio “vacío” o “libre” entre ellos. Como espacio “vacío/libre” nos referimos al espacio que no ocupan los elementos en relación a su fila. Cuando este valor se omite, se establece en 1.
+– flex-shrink:<número>; -> Determina el factor de disminución de tamaño de uno o varios elementos en relación al resto teniendo en cuenta el espacio “vacío” o “libre” entre ellos. Cuando este valor se omite, se establece en 1.
+– flex-basis: auto | 0 | <width> -> Especifica el tamaño principal inicial de los elementos teniendo en cuenta el espacio “vacío” o “libre” entre ellos. Cuando este valor se omite, se establece en 0. Esta propiedad hace que, dependiendo del valor asignado, el tamaño “base” se interprete como “todo el espacio” del elemento o como el “espacio sobrante” del mismo. A continuación vemos un gráfico donde visualmente se explica cómo se interpretan estos valores en relación al tamaño del elemento.
+￼
+
+Esta propiedad “flex” puede funcionar de diferentes formas dependiendo del valor que establezcamos y no podemos presentar todos los posibles ejemplos que pueden darse. Lo mejor en este caso es que probéis directamente a modificar sus valores con una maquetación básica y así poder observar su comportamiento. Nosotros os ofrecemos un punto de partida como el del siguiente ejemplo con el que */
+
+/* CSS EJEMPLO 26: */
+/* .contenedor{
+display:flex;
+}
+.elemento{
+flex:1 1 0;
+}
+.elemento:nth-child(4){
+flex-grow:3;
+} */
+
+
+
+    </style>
